@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  isDetailsDisplayed = false;
+  clicks = [];
+
+  onDisplayDetails() {
+    this.clicks.push('Click');
+    this.isDetailsDisplayed = !this.isDetailsDisplayed;
+  }
 }
