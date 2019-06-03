@@ -1,2 +1,17 @@
-<app-server></app-server>
-<app-server></app-server>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="input-wrap">
+        <input type="text" class="form-control" [(ngModel)]="serverName">
+      </div>
+      <p>Server name: {{ serverName }}</p>
+      <div class="btn-wrap">
+        <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add new Server</button>
+      </div>
+
+      <p>Server creation status: {{ serverCreationStatus }}</p>
+      <app-server></app-server>
+      <app-server></app-server>
+    </div>
+  </div>
+</div>
