@@ -10,7 +10,6 @@ export class AppComponent {
   private currentPage = Page.recipes;
 
   onPageChanged(page: Page): void {
-    console.log(page);
     this.currentPage = page;
   }
 
