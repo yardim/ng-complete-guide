@@ -1,4 +1,4 @@
-<div *ngIf="recipe">
+<ng-template [ngIf]="recipe">
   <div class="row">
     <div class="col-xs-12">
       <img [src]="recipe.imagePath" alt="" class="img-responsive">
@@ -33,4 +33,4 @@
       Ingredients
     </div>
   </div>
-</div>
+</ng-template>
