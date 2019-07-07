@@ -4,6 +4,7 @@ import { RecipesComponent } from './recipe-book/recipes/recipes.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list/shopping-list.component';
 import { RecipeDetailComponent } from './recipe-book/recipe-detail/recipe-detail.component';
 import { EmptyDetailsComponent } from './recipe-book/empty-details/empty-details.component';
+import { EditRecipeComponent } from './recipe-book/edit-recipe/edit-recipe.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,8 @@ const routes: Routes = [
     component: RecipesComponent,
     children: [
       { path: '', component: EmptyDetailsComponent, pathMatch: 'full' },
+      { path: 'new', component: EditRecipeComponent },
+      { path: ':recipeNumber/edit', component: EditRecipeComponent },
       { path: ':recipeNumber', component: RecipeDetailComponent },
     ]
   },
