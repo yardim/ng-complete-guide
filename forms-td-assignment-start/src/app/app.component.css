@@ -1,0 +1,7 @@
+.row {
+  padding: 20px 0;
+}
+
+form .ng-touched.ng-invalid {
+  border: 1px solid red;
+}
