@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { EmptyDetailsComponent } from './empty-details/empty-details.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
   imports: [
     CommonModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     RecipesComponent

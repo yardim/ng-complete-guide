@@ -7,6 +7,7 @@ import { RecipeBookModule } from './recipe-book/recipe-book.module';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { HeaderComponent } from './header/header.component';
 import { SharedModule } from './shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     RecipeBookModule,
     ShoppingListModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
