@@ -5,3 +5,13 @@ button {
 .btns-row {
   margin-bottom: 20px;
 }
+
+.ingredient-row {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
